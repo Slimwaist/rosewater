@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег DIV</title>
+  <style type="text/css">
+   body{
+  padding:40vh 0;
+  background-color:#fff
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: red;
+  display: inline-block;
+  height: 50px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  position: absolute; 
+  left: 45%; top: 45%;
+  width: 50px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 )
+      rotate(-45deg);    
+  }
+  20%
+  {
+    transform: scale( 1.25 )
+      rotate(-45deg);  
+  }
+   40%
+  {
+    transform: scale( 1.5 )
+      rotate(-45deg);
+  }
+}
+  </style> 
+ </head>
+ <body>
+	<h3 align="center"><font size="5" color="white" face="Arial">.</font>
+	</h3>
+	<h3 align="center"><font size="5" color="white" face="Arial">.</font>
+	</h3>
+	<h3 align="center"><font size="5" color="white" face="Arial">.</font>
+	</h3>
+		<h3>
+			<span style="margin-left: 683px; margin-top: 2px;"><font size="5" color="red" face="Arial">И</font></span>
+			</h3>
+		<h3>
+			<span style="margin-left: 683px; margin-top: 2px;"><font size="5" color="red" face="Arial">Н</font></span>
+			</h3>
+		<h3>	<span style="margin-left: 683px; margin-top: 2px;"><font size="5" color="red" face="Arial">Н</font></span>
+			</h3>
+		<h3><span style="margin-left: 683px; margin-top: 2px;"><font size="5" color="red" face="Arial">А</font></span>
+			</h3>
+  <div class="heart"></div>
+ </body>
+</html>
